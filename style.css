@@ -34,7 +34,7 @@ body {
 }
 
 .anim-typewriter {
-  animation: typewriter 4s steps(40) 1s 1 normal both,
+  animation: typewriter 4s steps(60) 1s 1 normal both,
     blinkTextCursor 700ms steps(10) infinite normal;
 }
 
@@ -43,11 +43,11 @@ body {
     width: 0;
   }
   to {
-    width: 11em;
+    width: 10.5em;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 760px) {
   @keyframes typewriter {
     from {
       width: 0;
@@ -300,8 +300,7 @@ h5 {
 }
 
 .project1 {
-  background: url(1.jpg)
-    no-repeat 50% 50%;
+  background: url(1.jpg) no-repeat 50% 50%;
   background-size: cover;
 }
 
@@ -319,8 +318,7 @@ h5 {
 }
 
 .project2 {
-  background: url(2.jpg)
-    no-repeat 50% 20%;
+  background: url(2.jpg) no-repeat 50% 20%;
   background-size: cover;
 }
 
@@ -338,8 +336,7 @@ h5 {
 }
 
 .project3 {
-  background: url(3.jpg)
-    no-repeat 50% 50%;
+  background: url(3.jpg) no-repeat 50% 50%;
   background-size: cover;
 }
 
@@ -357,8 +354,7 @@ h5 {
 }
 
 .project4 {
-  background: url(4.jpg)
-    no-repeat 50% 50%;
+  background: url(4.jpg) no-repeat 50% 50%;
   background-size: cover;
 }
 
@@ -397,8 +393,8 @@ h5 {
 .footer {
   background: #111;
   text-align: center;
-  padding: 2em 0;
-  padding-bottom: 0;
+  padding: 5em;
+  padding-bottom: 5em;
 }
 
 .footer a {
@@ -424,7 +420,7 @@ h5 {
   list-style: none;
   display: flex;
   justify-content: center;
-  margin: 1em 0 0;
+  margin: 2em 0 0;
   padding: 0;
 }
 
@@ -433,12 +429,13 @@ h5 {
 }
 
 .social-list__link {
-  padding: 0.5em;
-  font-size: 1.7em;
+  padding: 1em;
+  font-size: 3em;
 }
 
-.fa, .contact {
-  font-family: 'FontAwesome' !important; 
+.fa,
+.contact {
+  font-family: "FontAwesome" !important;
 }
 
 /*--- End of Footer ----*/
@@ -472,6 +469,200 @@ h5 {
 .about {
   height: 100px;
   margin-top: 120px;
+}
+
+.my-skills .my-professional-skills {
+  padding-right: 60px;
+  color: white;
+}
+
+.my-skills .my-professional-skills h5 {
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 60px;
+}
+
+.my-professional-skills {
+  padding-left: 20%;
+}
+
+.my-professional-skills h5 {
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 60px;
+}
+
+.my-professional-progress li {
+  display: inline-block;
+  margin: 0 auto;
+  float: none;
+  width: 48%;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.my-progress {
+  margin-bottom: 10px;
+  font: 900 1.14285/1 Cinzerl, cursive;
+  color: white;
+}
+
+.my-progress .progress-bar-text {
+  color: inherit !important;
+}
+
+.progress.progress-line {
+  height: 10px;
+  margin-right: 60px;
+}
+
+.progress.progress-line .progressbar-text {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  width: 60px;
+  transform: translateY(-35%);
+  text-align: center;
+}
+
+.individ-skill {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.individ-skill .inner-skill {
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.individ-skill .inner-skill .info {
+  position: relative;
+}
+
+.individ-skill .inner-skill .info .name {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 15px;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+.individ-skill .inner-skill .info .percentage-num {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.individ-skill .inner-skill .progress-bar {
+  position: relative;
+  width: 100%;
+  height: 7px;
+  margin: 30px 0 2px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.individ-skill .inner-skill .percentage-java {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: rgba(5, 65, 130, 1);
+  animation: java-fill 2s forwards;
+}
+
+@keyframes java-fill {
+  100% {
+    width: 75%;
+  }
+}
+
+.individ-skill .inner-skill .percentage-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: rgba(5, 65, 130, 1);
+  animation: js-fill 2s forwards;
+}
+
+@keyframes js-fill {
+  100% {
+    width: 70%;
+  }
+}
+
+.individ-skill .inner-skill .percentage-python {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: rgba(5, 65, 130, 1);
+  animation: python-fill 2s forwards;
+}
+
+@keyframes python-fill {
+  100% {
+    width: 65%;
+  }
+}
+
+.individ-skill .inner-skill .percentage-sql {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: rgba(5, 65, 130, 1);
+  animation: sql-fill 2s forwards;
+}
+
+@keyframes sql-fill {
+  100% {
+    width: 60%;
+  }
+}
+
+.individ-skill .inner-skill .percentage-react {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: rgba(5, 65, 130, 1);
+  animation: react-fill 2s forwards;
+}
+
+@keyframes react-fill {
+  100% {
+    width: 60%;
+  }
 }
 
 /*-- project page -- */
