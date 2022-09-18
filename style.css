@@ -33,6 +33,10 @@ body {
   transform: translateY(-50%);
 }
 
+h3 {
+  text-align: center;
+}
+
 .anim-typewriter {
   animation: typewriter 4s steps(60) 1s 1 normal both,
     blinkTextCursor 700ms steps(10) infinite normal;
@@ -289,8 +293,8 @@ h5 {
 
 .vertical {
   margin-top: 40px;
-  border-left: 1px solid #fff;
-  height: 30px;
+  border-left: 3px solid rgb(255, 255, 255);
+  height: 40px;
   position: absolute;
   left: 50%;
 }
@@ -300,7 +304,8 @@ h5 {
 }
 
 .project1 {
-  background: url(1.jpg) no-repeat 50% 50%;
+  background: url(./img/1.jpg) no-repeat 50% 50%;
+  background-position: right;
   background-size: cover;
 }
 
@@ -311,14 +316,14 @@ h5 {
   position: relative;
   color: #fff;
   display: block;
-  top: 8%;
-  left: -60%;
+  top: 50%;
+  left: -40%;
   right: 0;
   bottom: 0;
 }
 
 .project2 {
-  background: url(2.jpg) no-repeat 50% 20%;
+  background: url(./img/2.jpg);
   background-size: cover;
 }
 
@@ -329,14 +334,15 @@ h5 {
   position: relative;
   color: #fff;
   display: block;
-  top: 80%;
-  left: 90%;
-  right: 10%;
+  top: 50%;
+  left: 115%;
+  right: 0;
   bottom: 0;
 }
 
 .project3 {
-  background: url(3.jpg) no-repeat 50% 50%;
+  background: url(./img/4.jpg);
+  background-position: right;
   background-size: cover;
 }
 
@@ -347,26 +353,8 @@ h5 {
   position: relative;
   color: #fff;
   display: block;
-  top: 80%;
-  left: -50%;
-  right: 0;
-  bottom: 0;
-}
-
-.project4 {
-  background: url(4.jpg) no-repeat 50% 50%;
-  background-size: cover;
-}
-
-.project4::after {
-  content: "project 4";
-  font-family: "Roboto Mono";
-  font-size: 36px;
-  position: relative;
-  color: #fff;
-  display: block;
-  top: 10%;
-  left: 90%;
+  top: 50%;
+  left: -40%;
   right: 0;
   bottom: 0;
 }
@@ -383,8 +371,7 @@ h5 {
 
   .project1::after,
   .project2::after,
-  .project3::after,
-  .project4::after {
+  .project3::after {
     display: none;
   }
 }
@@ -430,7 +417,7 @@ h5 {
 
 .social-list__link {
   padding: 1em;
-  font-size: 3em;
+  font-size: 2em;
 }
 
 .fa,
@@ -477,7 +464,7 @@ h5 {
 }
 
 .my-skills .my-professional-skills h5 {
-  font-size: 30px;
+  font-size: 25px;
   line-height: 40px;
   text-align: center;
   font-weight: 400;
@@ -486,14 +473,6 @@ h5 {
 
 .my-professional-skills {
   padding-left: 20%;
-}
-
-.my-professional-skills h5 {
-  font-size: 30px;
-  line-height: 40px;
-  text-align: center;
-  font-weight: 400;
-  margin-bottom: 60px;
 }
 
 .my-professional-progress li {
@@ -507,8 +486,6 @@ h5 {
 
 .my-progress {
   margin-bottom: 10px;
-  font: 900 1.14285/1 Cinzerl, cursive;
-  color: white;
 }
 
 .my-progress .progress-bar-text {
@@ -664,6 +641,90 @@ h5 {
     width: 60%;
   }
 }
+
+/*-- End of about page -- */
+
+/*-- Contact page -- */
+#contact-form {
+  margin: 5% 1.4%;
+}
+
+#contact-form ul {
+  list-style: none;
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
+
+#contact-form li {
+  padding: 10px;
+}
+
+#contact-form li:last-of-type {
+  border-bottom: none;
+}
+
+#contact-form label {
+  display: block;
+  font-size: 0.8em;
+  color: #999;
+  padding-left: 5px;
+}
+
+#contact-project {
+  padding-left: 1000px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 5px;
+
+  border: none;
+  resize: vertical;
+  background: transparent;
+  color: #fff;
+  font-weight: bolder;
+}
+
+input:focus {
+  outline: none;
+  border: none;
+}
+
+textarea:focus {
+  outline: none;
+  border: none;
+}
+
+.textarea {
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.send {
+  margin-left: 50px;
+  text-transform: uppercase;
+  padding: 20px 30px;
+  background: transparent;
+  color: #dfdfdf;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.send:hover {
+  background: #dfdfdf;
+  color: #101010;
+}
+
+@media (max-width: 768px) {
+  #contact-form {
+    margin: 5% -8%;
+    width: 98%;
+  }
+}
+
+/*-- End of contact page -- */
+
+/*-- project page -- */
 
 /*-- project page -- */
 
