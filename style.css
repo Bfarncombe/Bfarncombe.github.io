@@ -272,7 +272,7 @@ nav #menu li a:hover {
   height: 13px;
   border-bottom: 2px solid #fff;
   border-right: 2px solid #fff;
-  -webkit-transform: translate(-50%, 0) rotate(45deg);
+  transform: translate(-50%, 0) rotate(45deg);
   animation: fade_move_down 3s cubic-bezier(0.19, 1, 0.22, 1) infinite;
 }
 
@@ -810,25 +810,94 @@ textarea:focus {
   border-bottom: 1px solid #dfdfdf;
 }
 
-.send {
-  margin-left: 50px;
-  text-transform: uppercase;
-  padding: 20px 30px;
-  background: transparent;
-  color: #dfdfdf;
-  font-size: 14px;
-  letter-spacing: 2px;
-}
-
-.send:hover {
-  background: #dfdfdf;
-  color: #101010;
-}
-
 @media (max-width: 768px) {
   #contact-form {
     margin: 5% -8%;
     width: 98%;
+  }
+}
+.send-button-container {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.send-button-message {
+  text-align: center;
+  text-transform: uppercase;
+  translate: 0, 0, 10;
+  padding: 1em;
+}
+
+.send-button {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  display: block;
+  line-height: 1.1;
+}
+
+.send-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 25px;
+  z-index: 1;
+}
+
+path {
+  stroke-width: 2;
+  stroke: rgba(5, 65, 130, 1);
+  fill: none;
+  stroke-dasharray: 460;
+  -webkit-transition: -webkit-transform 1s linear;
+  -moz-transition: -moz-transform 1s linear;
+  transition: transform 1s linear;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+svg:hover path {
+  animation: dash 2s reverse cubic-bezier(0.45, 0.03, 0.51, 0.95) 0s infinite;
+  -webkit-animation: dash 2s reverse cubic-bezier(0.45, 0.03, 0.51, 0.95) 0s
+    infinite;
+  -moz-animation: dash 2s reverse cubic-bezier(0.45, 0.03, 0.51, 0.95) 0s
+    infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes dash {
+  to {
+    fill: transparent;
+    stroke: #ffffff;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dashoffset: 600;
+    stroke-dasharray: 600 0;
+  }
+}
+@keyframes dash {
+  to {
+    fill: transparent;
+    stroke: #ffffff;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dashoffset: 600;
+    stroke-dasharray: 600 0;
+  }
+}
+@-moz-keyframes dash {
+  to {
+    fill: transparent;
+    stroke: #ffffff;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dashoffset: 600;
+    stroke-dasharray: 600 0;
   }
 }
 
