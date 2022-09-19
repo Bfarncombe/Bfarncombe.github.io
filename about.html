@@ -18,6 +18,10 @@
     />
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
+    <!-- Jquery cdn-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js"></script>
+
     <!-- google fonts -->
     <link
       href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i"
@@ -106,7 +110,7 @@
                 I am graduate of computer science from the University of
                 Manitoba looking to enter the field. My interests are in web
                 development and data science. I have experience developing
-                projects with a wide array of language and frameworks such as
+                projects with a wide array of languages and frameworks such as
                 Java, Javascript, Python, SQL, Node, Express, MongoDB and React.
               </p>
 
@@ -209,41 +213,167 @@
                         </div>
                       </div>
                     </div>
+
                     <div class="col-sm-12 col-md-6">
                       <div class="my-professional-skills">
                         <h5 class="wow fadeInUp" data-wow-delay="1.2s">
                           professional
                         </h5>
+
                         <ul class="my-professional-progress">
                           <li>
-                            <div
-                              class="my-progress my-progress-circle"
-                              data-progress="75"
-                            ></div>
+                            <div class="outer-progress-circle">
+                              <div class="inner-progress-circle">
+                                <div class="progress-circle-value">
+                                  <svg height="200" width="200">
+                                    <circle
+                                      class="communication-circle"
+                                      cx="100"
+                                      cy="100"
+                                      r="50"
+                                      stroke="#054182"
+                                      stroke-width="10"
+                                      fill-opacity=".25"
+                                    ></circle>
+                                    <text
+                                      class="prof-name"
+                                      x="50%"
+                                      y="50%"
+                                      text-anchor="middle"
+                                      stroke="#FFFFFF"
+                                      stroke-width="1px"
+                                      dy=".3em"
+                                    >
+                                      85%
+                                    </text>
+                                  </svg>
+                                </div>
+                              </div>
+                            </div>
                             <div class="prof-skill-name">Communication</div>
                           </li>
 
                           <li>
-                            <div
-                              class="my-progress my-progress-circle"
-                              data-progress="80"
-                            ></div>
+                            <div class="outer-progress-circle">
+                              <div class="inner-progress-circle">
+                                <div class="progress-circle-value">
+                                  <svg height="200" width="200">
+                                    <circle
+                                      class="teamwork-circle"
+                                      cx="100"
+                                      cy="100"
+                                      r="50"
+                                      stroke="#054182"
+                                      stroke-width="10"
+                                      fill-opacity=".25"
+                                    ></circle>
+                                    <text
+                                      class="prof-name"
+                                      x="50%"
+                                      y="50%"
+                                      text-anchor="middle"
+                                      stroke="#FFFFFF"
+                                      stroke-width="1px"
+                                      dy=".3em"
+                                    >
+                                      80%
+                                    </text>
+                                  </svg>
+                                </div>
+                              </div>
+                            </div>
                             <div class="prof-skill-name">Teamwork</div>
                           </li>
 
                           <li>
-                            <div
-                              class="my-progress my-progress-circle"
-                              data-progress="60"
-                            ></div>
+                            <div class="outer-progress-circle">
+                              <div class="inner-progress-circle">
+                                <div class="progress-circle-value">
+                                  <svg height="200" width="200">
+                                    <circle
+                                      class="creativity-circle"
+                                      cx="100"
+                                      cy="100"
+                                      r="50"
+                                      stroke="#054182"
+                                      stroke-width="10"
+                                      fill-opacity=".25"
+                                    ></circle>
+                                    <text
+                                      class="prof-name"
+                                      x="50%"
+                                      y="50%"
+                                      text-anchor="middle"
+                                      stroke="#FFFFFF"
+                                      stroke-width="1px"
+                                      dy=".3em"
+                                    >
+                                      70%
+                                    </text>
+                                  </svg>
+                                </div>
+                              </div>
+                            </div>
                             <div class="prof-skill-name">Creativity</div>
                           </li>
 
                           <li>
-                            <div
-                              class="my-progress my-progress-circle"
-                              data-progress="80"
-                            ></div>
+                            <div class="outer-progress-circle">
+                              <div class="inner-progress-circle">
+                                <div class="progress-circle-value">
+                                  <div class="progress-circle-value">
+                                    <svg height="200" width="200">
+                                      <linearGradient id="GradientColor">
+                                        <stop
+                                          offset="0%"
+                                          stop-color="#054182 "
+                                        />
+                                        <stop
+                                          offset="20%"
+                                          stop-color="#054a94"
+                                        />
+                                        <stop
+                                          offset="40%"
+                                          stop-color="#0656ac"
+                                        />
+                                        <stop
+                                          offset="60%"
+                                          stop-color=" #0763c5"
+                                        />
+                                        <stop
+                                          offset="80%"
+                                          stop-color="#086fdd "
+                                        />
+                                        <stop
+                                          offset="100%"
+                                          stop-color="#086fdd"
+                                        />
+                                      </linearGradient>
+                                      <circle
+                                        class="time-circle"
+                                        cx="100"
+                                        cy="100"
+                                        r="50"
+                                        stroke="#GradientColor"
+                                        stroke-width="10"
+                                        fill-opacity=".25"
+                                      ></circle>
+                                      <text
+                                        class="prof-name"
+                                        x="50%"
+                                        y="50%"
+                                        text-anchor="middle"
+                                        stroke="#FFFFFF"
+                                        stroke-width="1px"
+                                        dy=".3em"
+                                      >
+                                        75%
+                                      </text>
+                                    </svg>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                             <div class="prof-skill-name">Time Management</div>
                           </li>
                         </ul>

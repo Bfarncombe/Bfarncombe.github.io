@@ -15,6 +15,10 @@ body {
   height: 100px;
 }
 
+.container-fluid {
+  overflow-x: hidden;
+}
+
 @media (max-width: 768px) {
   .whitespace {
     display: none;
@@ -99,7 +103,7 @@ nav #brand a:hover {
 
 nav #menu {
   float: left;
-  right: 80px;
+  right: 70px;
   position: fixed;
 }
 
@@ -155,7 +159,7 @@ nav #menu li a:hover {
   top: 0px;
   position: fixed;
   background: #0f0f0f;
-  width: 100%;
+  width: 90%;
   height: 100%;
   visibility: hidden;
   opacity: 0;
@@ -317,7 +321,7 @@ h5 {
   color: #fff;
   display: block;
   top: 50%;
-  left: -40%;
+  left: -60%;
   right: 0;
   bottom: 0;
 }
@@ -354,7 +358,7 @@ h5 {
   color: #fff;
   display: block;
   top: 50%;
-  left: -40%;
+  left: -60%;
   right: 0;
   bottom: 0;
 }
@@ -443,6 +447,8 @@ h5 {
   text-align: left;
 }
 
+/*-- End of work page -- */
+
 @media (max-width: 768px) {
   .hero-content {
     padding-top: 50px;
@@ -469,19 +475,6 @@ h5 {
   text-align: center;
   font-weight: 400;
   margin-bottom: 60px;
-}
-
-.my-professional-skills {
-  padding-left: 20%;
-}
-
-.my-professional-progress li {
-  display: inline-block;
-  margin: 0 auto;
-  float: none;
-  width: 48%;
-  margin-bottom: 30px;
-  text-align: center;
 }
 
 .my-progress {
@@ -604,6 +597,25 @@ h5 {
   }
 }
 
+.individ-skill .inner-skill .percentage-react {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: rgba(5, 65, 130, 1);
+  animation: react-fill 2s forwards;
+}
+
+@keyframes react-fill {
+  100% {
+    width: 60%;
+  }
+}
+
 .individ-skill .inner-skill .percentage-sql {
   position: absolute;
   top: 0;
@@ -623,22 +635,120 @@ h5 {
   }
 }
 
-.individ-skill .inner-skill .percentage-react {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 10px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  background: rgba(5, 65, 130, 1);
-  animation: react-fill 2s forwards;
+.my-professional-skills {
+  padding-left: 20%;
 }
 
-@keyframes react-fill {
+.my-professional-progress li {
+  display: inline-block;
+  margin: auto;
+  float: none;
+  width: 48%;
+  margin-top: -5px;
+  margin-bottom: 40px;
+  margin-right: 1px;
+  text-align: center;
+}
+
+.outer-progress-circle {
+  position: relative;
+  background: transparent;
+  display: inline-block;
+  fill: none;
+  stroke-width: 19px;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  padding: 2.5px;
+  margin-bottom: 10px;
+}
+
+.inner-progress-circle {
+  display: inline-block;
+  height: 85px;
+  width: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.my-professional-progress {
+  margin: 5px 5px;
+}
+
+.progress-circle-value {
+  color: rgb(205, 205, 205);
+  text-align: center;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  translate: y 50px;
+}
+
+@keyframes animate-circle {
   100% {
-    width: 60%;
+    stroke-dashoffset: 0;
+  }
+}
+
+.teamwork-circle {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: teamwork-stroke 2s ease-out forwards;
+}
+.communication-circle {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: communication-stroke 2s ease-out forwards;
+}
+.creativity-circle {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: creativity-stroke 2s ease-out forwards;
+}
+.time-circle {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: time-stroke 2s ease-out forwards;
+}
+
+circle {
+  stroke: url(#GradientColor);
+}
+
+.prof-name {
+  font: italic 13px sans-serif;
+  font-size: 15px;
+  font-weight: 100;
+  stroke: white;
+}
+
+@keyframes teamwork-stroke {
+  to {
+    stroke-dashoffset: 742;
+  }
+}
+
+@keyframes communication-stroke {
+  to {
+    stroke-dashoffset: 730;
+  }
+}
+@keyframes creativity-stroke {
+  to {
+    stroke-dashoffset: 780;
+  }
+}
+@keyframes time-stroke {
+  to {
+    stroke-dashoffset: 762;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
   }
 }
 
