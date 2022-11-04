@@ -307,6 +307,12 @@ h5 {
   height: 400px;
 }
 
+.img1 {
+  background: url(./img/1.jpg) no-repeat 50% 50%;
+  background-position: right;
+  background-size: cover;
+}
+
 .project1 {
   background: url(./img/1.jpg) no-repeat 50% 50%;
   background-position: right;
@@ -326,8 +332,15 @@ h5 {
   bottom: 0;
 }
 
+.img2 {
+  background: url(./img/2.jpg) no-repeat 50% 50%;
+  background-position: right;
+  background-size: cover;
+}
+
 .project2 {
-  background: url(./img/2.jpg);
+  background: url(./img/2.jpg) no-repeat 50% 50%;
+  background-position: right;
   background-size: cover;
 }
 
