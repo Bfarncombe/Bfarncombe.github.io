@@ -317,6 +317,13 @@ h5 {
   background: url(./img/1.jpg) no-repeat 50% 50%;
   background-position: right;
   background-size: cover;
+  cursor: pointer;
+  filter: grayscale(100%);
+  transition: 0.5s;
+}
+
+.project1:hover {
+  filter: grayscale(0%);
 }
 
 .project1::after {
@@ -342,8 +349,13 @@ h5 {
   background: url(./img/2.jpg) no-repeat 50% 50%;
   background-position: right;
   background-size: cover;
+  cursor: pointer;
+  filter: grayscale(100%);
+  transition: 0.5s;
 }
-
+.project2:hover {
+  filter: grayscale(0%);
+}
 .project2::after {
   content: "Travel Journal";
   font-family: "Roboto Mono";
@@ -374,6 +386,14 @@ h5 {
   left: -60%;
   right: 0;
   bottom: 0;
+}
+
+.next {
+  cursor: pointer;
+}
+
+.prev {
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
